@@ -1,29 +1,59 @@
+body{
+    background-color: #95a5a6;
+    font-family: sans-serif;
+}
+
+hr{
+    margin: 0px;
+    border-top: 3px double #8c8b8b;
+}
+
+.social-media>a{
+    margin-right: 20px;
+    color: inherit;
+}
+/**home**/
+#home{
+    background-image: url(images/bg2.jpg);
+    width: 100%;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 220px;
+    font-family: 'Lobster', cursive;
+    color: #D3D3D3;
+    font-size: 3.1em;
+}
+
+#about{
+    background-color:  #d3d3d3;
+    padding: 5% 2%;
+}
 .jumbotron{
     font-family: monospace;
+     background-color:  #d3d3d3;
 }
 .jumbotron p{
     font-size: 1em;
     text-align: left;
 }
 
-body{
-    background-color: #bdc3c7;
-    font-family: sans-serif;
-}
-.social-media>a{
-    margin-right: 20px;
-    color: inherit;
-}
-
-
-
 img{
-/*
-    width: 250px;
-    height: 250px;
-*/
-    margin: 5px;
+    margin: 2% auto;
+    display:block
 }
 .main-content{
-    margin-bottom: 100px;
+   padding: 2% 2%;
 }
+
+
+
+
+
+
+
+
+

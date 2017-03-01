@@ -1,28 +1,15 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-	var btt = $('.contacts');
+	$('a[href^="#"]').on('click',function(e) {
 
-	$(window).on('scroll', function(){
-
-		var self = $(this),
-		height = self.height(),
-		top = self.scrollTop();
-        console.log(top);
-//		if(top > height){
-//			if(!btt.is('visible')){
-//				btt.show();
-//			}
-//		}else{
-//			btt.hide();
-//		}
-	})
-
-	btt.on('click', function(event){
-
-		$('html, body').animate({
-			scrollTop: 0
-		},500);
-		event.preventDefault();
-	});
+        e.preventDefault();
+        var target = this.hash;
+        var $target = $(target);
+        
+        $('html, body').animate({
+            
+            'scrollTop': $target.offset().top
+        }, 500, 'swing'); 
+    });
 
 });
