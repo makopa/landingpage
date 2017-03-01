@@ -1,0 +1,27 @@
+.jumbotron{
+    font-family: monospace;
+}
+.jumbotron p{
+    font-size: 1em;
+    text-align: left;
+}
+
+body{
+    background-color: #bdc3c7;
+    font-family: sans-serif;
+}
+.social-media>a{
+    margin-right: 20px;
+    color: inherit;
+}
+
+
+
+img{
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+.main-content{
+    margin-bottom: 100px;
+}
