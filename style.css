@@ -8,6 +8,7 @@ hr{
     border-top: 3px double #8c8b8b;
 }
 
+
 .social-media>a{
     margin-right: 20px;
     color: inherit;
@@ -16,7 +17,8 @@ hr{
 #home{
     background-image: url(images/bg2.jpg);
     width: 100%;
-    min-height: 500px;
+/*    position: fixed;*/
+    min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +29,13 @@ hr{
     color: #D3D3D3;
     font-size: 3.1em;
 }
-
+.dropdown-menu{
+    background-color: #222222;
+}
+.dropdown-menu li a{
+    color: #777;
+}
+/**about**/
 #about{
     background-color:  #d3d3d3;
     padding: 5% 2%;
@@ -49,6 +57,18 @@ img{
    padding: 2% 2%;
 }
 
+@media only screen and (max-width: 768px){
+
+    .main-content img{
+            width: 90%;
+    }
+
+    .navbar, .dropdown-menu {
+        opacity: .8;
+         text-align: center;
+    }
+
+}
 
 
 
