@@ -18,7 +18,7 @@ hr{
     background-image: url(images/bg2.jpg);
     width: 100%;
 /*    position: fixed;*/
-    min-height: 500px; 
+    height: 800px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,6 +28,11 @@ hr{
     font-family: 'Lobster', cursive;
     color: #D3D3D3;
     font-size: 3.1em;
+}
+.logo{
+    display: block;
+    margin-left: 50px;
+    float: left;
 }
 .dropdown-menu{
     background-color: #222222;
