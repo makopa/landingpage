@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js\jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/logo1.png"/>
@@ -17,19 +17,19 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                
+
                     <div class='logo'>
                         <img src='images/logo1.png' alt='makopa logo'/>
                     </div>
-                
+
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                    
+
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-           </div> 
-            
+           </div>
+
             <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
                      <li><a href="#home" class="active">Home</a></li>
@@ -48,13 +48,16 @@
                         </ul>
                     </li>
                 </ul>
-            </div>   
-            
+            </div>
+
         </div>
     </div>
     <!--Home Conent-->
-    <div id="home"></div>
-   
+		<div class="home-bg">
+				<div class='home-greet'></div>
+		</div>
+
+
     <!--About Content-->
     <div class='container-fluid' id="about">
         <div class="jumbotron text-align-left" >
@@ -68,9 +71,9 @@
     </div>
     <hr>
 
-    <!--Porfolio content-->     
+    <!--Porfolio content-->
     <div class="container main-content" id="portfolio">
-    
+
         <div class="row">
             <div class="col-md-4 ">
                <a href="http://codepen.io/jrdn129/pen/KWwVOG" target="_blank"><img src="images/1.PNG" class="img-rounded img-responsive"></a>
@@ -94,7 +97,7 @@
                 <a href="http://codepen.io/jrdn129/pen/KaEbmM" target='_blank'><img src="images/6.png" class="img-rounded img-responsive"></a>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-4 ">
                <a href="http://codepen.io/jrdn129/pen/wgVLzW" target='_blank'><img src="images/7.PNG" class="img-rounded img-responsive"></a>
@@ -103,14 +106,14 @@
                 <a href="http://codepen.io/jrdn129/pen/egPBxW" target='_blank'><img src="images/8.PNG" class="img-rounded img-responsive"></a>
             </div>
         </div>
-        
+
     </div>
     <!--FOOTER-->
     <footer class="navbar-inverse">
-        
+
         <div class='container' id="contact">
             <p class="navbar-text pull-left">2017 Copyrights &copy; <a href="https://plus.google.com/108825597647999034530" target="blank">Jordan.Pagkatipunan@gmail.com</a></p>
-            
+
             <div class="social-media pull-right navbar-text">
                 <a href="https://www.facebook.com/jordan.pagkatipunan" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/makopa/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
@@ -119,10 +122,10 @@
                 <a href="https://www.freecodecamp.com/makopa" target="_blank"><i class="fa fa-free-code-camp fa-lg" aria-hidden="true"></i></a>
                 <a href="http://codepen.io/jrdn129/" target="_blank"><i class="fa fa-codepen fa-lg" aria-hidden="true"></i></a>
             </div>
-            
+
         </div>
     </footer>
-    
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body{
     background-color: #95a5a6;
     font-family: sans-serif;
@@ -14,20 +18,29 @@ hr{
     color: inherit;
 }
 /**home**/
-#home{
+.home-bg{
+    position: relative;
     background-image: url(images/bg2.jpg);
-    width: 100%;
-/*    position: fixed;*/
-    height: 800px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding-top: 220px;
-    font-family: 'Lobster', cursive;
-    color: #D3D3D3;
-    font-size: 3.1em;
+    width: 100%;
+    height: 800px;
+
+    /*background-size: 100%; 800px;*/
+    /*padding-top: 220px;*/
+}
+.home-greet{
+  background-image: url(images/homegreeting.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-color: pink;*/
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  margin-top: -30px;
+
 }
 .logo{
     display: block;
@@ -74,11 +87,3 @@ img{
     }
 
 }
-
-
-
-
-
-
-
-
