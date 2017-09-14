@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="js\jquery-3.1.1.min.js"></script>
+    <!--<script src="js\jquery-3.1.1.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/logo1.png"/>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<title>New Portfolio</title>
+
+	<title>My Portfolio</title>
 </head>
 <body>
     <!--top navitaion-->
@@ -34,7 +37,7 @@
                 <ul class="nav navbar-nav navbar-right">
                      <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#weather">Weather Today</a></li>
                     <li><a href="#contact">Contacts</a></li>
                      <li class="dropdrown">
                         <a href="#" class='dropdown-toggle' data-toggle='dropdown'>Social Media <b class="caret"></b></a>
@@ -62,57 +65,36 @@
     <div class='container-fluid' id="about">
         <div class="jumbotron text-align-left" >
             <center>
-                <h3>Hi there! Im Jordan Pagkatipunan an inspired Front-End Web Developer</h3>
+                <h3 class='lead'>Hi there! Im Jordan Pagkatipunan an inspired Front-End Web Developer</h3>
                 <p>I create this page to showcase my current set of skills in creating and designing a Webpage and Application.</p> <p>It's not very impressive yet, but I am proud of it. Because I am just starting up to achieve my goal to become an expert on my chosen path.</p>
-                <p>I finish my Bachelor's Degree in Information Technology on 2014 at Don Bosco Technical College of Mandaluyong and on February 7, 2017, I started my online course at Free Code Camp as Front-End Web Developer and finished on March 1, 2017 with certification</p>
-                <p>Please check out my previous works...Click the image to view the Source Code</p>
+                <p>I finish my Bachelor's Degree in Information Technology on 2014 at Don Bosco Technical College of Mandaluyong</p>
             </center>
         </div>
     </div>
     <hr>
 
-    <!--Porfolio content-->
-    <div class="container main-content" id="portfolio">
-
-        <div class="row">
-            <div class="col-md-4 ">
-               <a href="http://codepen.io/jrdn129/pen/KWwVOG" target="_blank"><img src="images/1.PNG" class="img-rounded img-responsive"></a>
-            </div>
-            <div class="col-md-4 " >
-                <a href="http://codepen.io/jrdn129/pen/XMWeMm" target='_blank'><img src="images/2.PNG" class="img-rounded img-responsive"></a>
-            </div>
-            <div class="col-md-4 ">
-                <a href="http://codepen.io/jrdn129/pen/JWdxEP" target='_blank'><img src="images/3.PNG" class="img-rounded img-responsive"></a>
-            </div>
-        </div>
-
-        <div class="row ">
-            <div class="col-md-4 ">
-                <a href="http://codepen.io/jrdn129/pen/bgJjXZ" target='_blank'><img src="images/4.PNG" class="img-rounded img-responsive"></a>
-            </div>
-            <div class="col-md-4 " >
-                <a href="http://codepen.io/jrdn129/pen/VPRXqX" target='_blank'><img src="images/5.PNG" class="img-rounded img-responsive"></a>
-            </div>
-            <div class="col-md-4 ">
-                <a href="http://codepen.io/jrdn129/pen/KaEbmM" target='_blank'><img src="images/6.png" class="img-rounded img-responsive"></a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 ">
-               <a href="http://codepen.io/jrdn129/pen/wgVLzW" target='_blank'><img src="images/7.PNG" class="img-rounded img-responsive"></a>
-            </div>
-            <div class="col-md-4" >
-                <a href="http://codepen.io/jrdn129/pen/egPBxW" target='_blank'><img src="images/8.PNG" class="img-rounded img-responsive"></a>
-            </div>
-        </div>
-
+    <!--weather apps content-->
+    <div class="container main-content weatherapps" id="weather">
+         <div class='container-fluid'>
+    <div class='spacer'></div>
+    <div class='block'>
+      <h1 class='text-center'><a href='' id='toggle'><span id='currentTemp'>...</span></a></h1>
+      <h1 class='text-center'><span id='currentWeather'>...</span></h1>
+      <h1 class='text-center'><span id='currentWindSpeed'>...</span></h1><br>Country Name: <span id='country'></span>
+      <br>City: <span id='city'></span><br>Latitude: <span id='latitude'></span><br>Longitude: <span id='longitude'></span><br>
+    </div>
+    <div class='spacer'></div>
+  </div>
+  
+</div>
+        
     </div>
     <!--FOOTER-->
-    <footer class="navbar-inverse">
+    <footer class="navbar-inverse ">
 
         <div class='container' id="contact">
             <p class="navbar-text pull-left">2017 Copyrights &copy; <a href="https://plus.google.com/108825597647999034530" target="blank">Jordan.Pagkatipunan@gmail.com</a></p>
+            <p class="navbar-text pull-left"><span class="glyphicon glyphicon-phone"></span>+63921-566-9083</p>
 
             <div class="social-media pull-right navbar-text">
                 <a href="https://www.facebook.com/jordan.pagkatipunan" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
@@ -127,5 +109,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+   
 </body>
 </html>
